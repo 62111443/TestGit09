@@ -6,6 +6,9 @@ class Apple:
         self.__year = year
         self__.price = price
         self.__color = color
+        
+    def get_price(self):
+        return self.__price
 
 class iPhone(Apple):
     def __init__(self, model, year, price, color, camera):
