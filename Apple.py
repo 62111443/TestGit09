@@ -2,43 +2,43 @@ import matplotlib.pyplot as plt
 
 class Apple:
     def __init__(self, model, year, price, color):
-        self.model = model
-        self.year = year
-        self.price = price
-        self.color = color
+        self.__model = model
+        self.__year = year
+        self__.price = price
+        self.__color = color
 
 class iPhone(Apple):
     def __init__(self, model, year, price, color, camera):
         super().__init__(model, year, price, color)
-        self.camera = camera
+        self.__camera = camera
 
     def display(self):
-        return f"iPhone Model: {self.model}, Year: {self.year}, Camera: {self.camera}, Color: {self.color}, Price: {self.price}"
+        return f"iPhone Model: {self.__model}, Year: {self.__year}, Camera: {self.__camera}, Color: {self.__color}, Price: {self.__price}"
 
 class MacBook(Apple):
     def __init__(self, model, year, price, color, keyboard):
         super().__init__(model, year, price, color)
-        self.keyboard = keyboard
+        self.__keyboard = keyboard
 
     def display(self):
-        return f"MacBook Model: {self.model}, Year: {self.year}, Keyboard: {self.keyboard}, Color: {self.color}, Price: {self.price}"
+        return f"MacBook Model: {self.__model}, Year: {self.__year}, Keyboard: {self.__keyboard}, Color: {self.__color}, Price: {self.__price}"
 
 class AppleWatch(Apple):
     def __init__(self, model, year, price, color, band_material):
         super().__init__(model, year, price, color)
-        self.band_material = band_material
+        self.__band_material = band_material
 
     def display(self):
-        return f"Apple Watch Model: {self.model}, Year: {self.year}, Band Material: {self.band_material}, Color: {self.color}, Price: {self.price}"
+        return f"Apple Watch Model: {self.__model}, Year: {self.__year}, Band Material: {self.__band_material}, Color: {self.__color}, Price: {self.__price}"
 
 class AirPod(Apple):
     def __init__(self, model, year, price, color, wireless_charging):
         super().__init__(model, year, price, color)
-        self.wireless_charging = wireless_charging
+        self.__wireless_charging = wireless_charging
 
     def display(self):
-        charging_feature = "with" if self.wireless_charging else "without"
-        return f"AirPod Model: {self.model}, Year: {self.year}, {charging_feature} Wireless Charging, Color: {self.color}, Price: {self.price}"
+        charging_feature = "with" if self.__wireless_charging else "without"
+        return f"AirPod Model: {self.__model}, Year: {self.__year}, {charging_feature} Wireless Charging, Color: {self.__color}, Price: {self.__price}"
 
 def code(args):
     sum = 0
